@@ -19,15 +19,13 @@ const getExtensionIcon = (ext: string) => {
 }
 
 export default function FilePreview({name, ext}: FilePreviewProps) {
-    return (
-      <li>
-        <div className="p-4 bg-slate-100 rounded-md">
-            <p className="font-sans text-md mb-2">{name}.{ext}</p>
+  return (
+    <div className="h-full flex flex-col p-4 mb-2 bg-slate-100 rounded-md">
+        <p className="font-sans text-md mb-2">{name}.{ext}</p>
 
-            <div className="bg-white p-8 rounded-md">
-                {getExtensionIcon(ext)}
-            </div>
+        <div className="mt-auto bg-white p-8 rounded-md">
+            {getExtensionIcon(ext)}
         </div>
-      </li>
-    )
-  }
+    </div>
+  )
+}

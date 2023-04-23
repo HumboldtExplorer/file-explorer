@@ -13,7 +13,7 @@ export default function FilePreviewList({children}: FilePreviewListProps) {
                     {children.map(child => {
                         if (child.name && child.ext) {
                             return (
-                                <li className="col-span-3" key={child.id}>
+                                <li className="col-span-6 md:col-span-3" key={child.id}>
                                     <FilePreview name={child.name} ext={child.ext} />
                                 </li>
                             )

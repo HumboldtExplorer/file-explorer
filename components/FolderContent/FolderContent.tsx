@@ -11,7 +11,7 @@ export default function FolderContent({data, currentFolder, folders, files} : Fo
         <div className="grid grid-rows-1 grid-cols-12 gap-4">
             <Sidebar data={data} />
 
-            <section className="col-span-10 p-6">
+            <section className="col-span-12 md:col-span-10 px-6 md:p-6">
                 <Breadcrumbs data={data} currentFolder={currentFolder} />
 
                 {currentFolder && Boolean(folders.length === 0 && Boolean(files.length === 0)) && (

@@ -7,7 +7,7 @@ export default function Sidebar({data}: SidebarProps) {
     const folders = createFolderStructure(data, null)
 
     return (
-        <aside className="min-h-screen max-h-screen col-span-2 p-6 bg-slate-100 shadow-xl shadow-black-500/50">
+        <aside className="md:min-h-screen md:max-h-screen col-span-12 md:col-span-2 p-6 bg-slate-100 shadow-xl shadow-black-500/50">
             <p className='font-sans font-bold text-2xl mb-6'>File Explorer</p>
             <Link 
               className="font-sans block font-bold text-md mb-2"
