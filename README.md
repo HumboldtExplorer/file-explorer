@@ -1,6 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Known Issues/Suggested Improvements
+
+- Add Jest tests to verify components are rendering correctly
+- Add loading component to display while data is loading
+- Add error component to display if API returns an error
+- Some components are sharing duplicated code, could be refactored to be more generic
+- Components such as Breadcrumbs or Sidebar could be refactored to render any data that adheres to a given interface, rather than being specific to FilExplorerFile objects. E.g.: "Page" objects
+
+### Code style
+- Prefix interfaces with I as per common style preferences
+- Use arrow functions instead of function keyword 
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
