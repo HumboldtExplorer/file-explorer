@@ -41,8 +41,7 @@ function getFolderById(files: FileExplorerFile[], id: string): FileExplorerFile 
             if (foundFolder !== null) {
                 return foundFolder
             }
-        }
-      
+        } 
     }
 
     return null

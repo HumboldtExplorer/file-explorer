@@ -14,8 +14,8 @@ export default function FolderPreviewList({children}: FolderPreviewListProps) {
 
                 {children?.map(child => {
                     return (
-                        <li className="col-span-3" key={child.id}>
-                            <FolderPreview name={child.name} />
+                        <li className="col-span-6 md:col-span-3" key={child.id}>
+                            <FolderPreview id={child.id} name={child.name} />
                         </li>
                     )
                 })

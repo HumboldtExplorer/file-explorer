@@ -22,21 +22,21 @@ export default function Breadcrumbs({data, currentFolder} : BreadcrumbProps) {
     }
 
     return (
-        <nav className='mt-14 mb-6'>
+        <nav className='md:mt-14 mb-6'>
             <ul className="flex flex-row">
                 <li className="flex flex-row items-center">
                     <Link 
-                        className="font-sans font-bold text-2xl"
+                        className="font-sans font-bold text-sm md:text-2xl"
                         href={'/'}>
                         My Files
                     </Link>
-                    <ChevronRightIcon className='mx-2 h-4 w-4' />
+                    <ChevronRightIcon className='mx-1 md:mx-2 h-4 w-4' />
                 </li>
 
                 {getBreadCrumbs(data, currentFolder).map(breadcrumb => {
                     return <li key={breadcrumb.id} className="flex flex-row items-center">
                         <Link 
-                            className="font-sans font-bold text-2xl"
+                            className="font-sans font-bold text-sm md:text-2xl"
                             href={`/files/${currentFolder?.id}`}>
                             {breadcrumb.name}
                         </Link>
